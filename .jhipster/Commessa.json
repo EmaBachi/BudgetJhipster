@@ -1,0 +1,25 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "divisione",
+            "otherEntityName": "divisione",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "nome"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "codice",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20170630074008",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "commessa",
+    "pagination": "infinite-scroll"
+}

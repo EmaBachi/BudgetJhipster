@@ -1,0 +1,23 @@
+{
+    "budgetApp": {
+        "responsabile" : {
+            "home": {
+                "title": "Responsabiles",
+                "createLabel": "Genera un nuovo Responsabile",
+                "createOrEditLabel": "Genera o modifica un Responsabile"
+            },
+            "created": "&Egrave; stato generato un nuovo Responsabile con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Responsabile identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Responsabile con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Responsabile {{ id }}?"
+            },
+            "detail": {
+                "title": "Responsabile"
+            },
+            "nome": "Nome",
+            "cognome": "Cognome",
+            "user": "User"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "budgetApp": {
+        "commessa" : {
+            "home": {
+                "title": "Commessas",
+                "createLabel": "Genera un nuovo Commessa",
+                "createOrEditLabel": "Genera o modifica un Commessa"
+            },
+            "created": "&Egrave; stato generato un nuovo Commessa con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Commessa identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Commessa con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Commessa {{ id }}?"
+            },
+            "detail": {
+                "title": "Commessa"
+            },
+            "codice": "Codice",
+            "divisione": "Divisione"
+        }
+    }
+}

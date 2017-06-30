@@ -1,0 +1,25 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "responsabile",
+            "otherEntityName": "responsabile",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "cognome"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20170630070746",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "divisione",
+    "pagination": "infinite-scroll"
+}

@@ -1,0 +1,23 @@
+{
+    "budgetApp": {
+        "conto" : {
+            "home": {
+                "title": "Contos",
+                "createLabel": "Genera un nuovo Conto",
+                "createOrEditLabel": "Genera o modifica un Conto"
+            },
+            "created": "&Egrave; stato generato un nuovo Conto con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Conto identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Conto con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Conto {{ id }}?"
+            },
+            "detail": {
+                "title": "Conto"
+            },
+            "codice": "Codice",
+            "nome": "Nome",
+            "descrizione": "Descrizione"
+        }
+    }
+}

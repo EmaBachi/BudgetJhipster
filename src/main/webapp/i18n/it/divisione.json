@@ -1,0 +1,22 @@
+{
+    "budgetApp": {
+        "divisione" : {
+            "home": {
+                "title": "Divisiones",
+                "createLabel": "Genera un nuovo Divisione",
+                "createOrEditLabel": "Genera o modifica un Divisione"
+            },
+            "created": "&Egrave; stato generato un nuovo Divisione con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Divisione identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Divisione con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Divisione {{ id }}?"
+            },
+            "detail": {
+                "title": "Divisione"
+            },
+            "nome": "Nome",
+            "responsabile": "Responsabile"
+        }
+    }
+}
