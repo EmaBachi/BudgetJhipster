@@ -1,0 +1,84 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "commessa",
+            "otherEntityName": "commessa",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "codice"
+        },
+        {
+            "relationshipName": "conto",
+            "otherEntityName": "conto",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "nome"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "gennaio",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "febbraio",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "marzo",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "aprile",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "maggio",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "giugno",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "luglio",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "agosto",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "settembre",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "ottobre",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "novembre",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "dicembre",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "totale",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "mensilizzare",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "divisione",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20170630125900",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "budget",
+    "pagination": "infinite-scroll"
+}

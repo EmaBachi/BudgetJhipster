@@ -9,9 +9,14 @@
     <include file="classpath:config/liquibase/changelog/20170630070746_added_entity_Divisione.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170630074008_added_entity_Commessa.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170630081548_added_entity_Conto.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170630125900_added_entity_Budget.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170630143029_added_entity_ContoContabile.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170630143543_added_entity_BudgetTemporaneo.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="classpath:config/liquibase/changelog/20170630070649_added_entity_constraints_Responsabile.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170630070746_added_entity_constraints_Divisione.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170630074008_added_entity_constraints_Commessa.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170630125900_added_entity_constraints_Budget.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170630143543_added_entity_constraints_BudgetTemporaneo.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

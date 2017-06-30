@@ -11,6 +11,9 @@
                 "divisione": "Divisione",
                 "commessa": "Commessa",
                 "conto": "Conto",
+                "budget": "Budget",
+                "contoContabile": "Conto Contabile",
+                "budgetTemporaneo": "Budget Temporaneo",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

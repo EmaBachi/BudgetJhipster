@@ -1,0 +1,92 @@
+<div>
+    <h2 data-translate="budgetApp.budgetTemporaneo.home.title">Budget Temporaneos</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="budget-temporaneo.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="budgetApp.budgetTemporaneo.home.createLabel">
+                        Create new Budget Temporaneo
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.reset()">
+                    <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="gennaio"><span data-translate="budgetApp.budgetTemporaneo.gennaio">Gennaio</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="febbraio"><span data-translate="budgetApp.budgetTemporaneo.febbraio">Febbraio</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="marzo"><span data-translate="budgetApp.budgetTemporaneo.marzo">Marzo</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="aprile"><span data-translate="budgetApp.budgetTemporaneo.aprile">Aprile</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="maggio"><span data-translate="budgetApp.budgetTemporaneo.maggio">Maggio</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="giugno"><span data-translate="budgetApp.budgetTemporaneo.giugno">Giugno</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="luglio"><span data-translate="budgetApp.budgetTemporaneo.luglio">Luglio</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="agosto"><span data-translate="budgetApp.budgetTemporaneo.agosto">Agosto</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="settembre"><span data-translate="budgetApp.budgetTemporaneo.settembre">Settembre</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="ottobre"><span data-translate="budgetApp.budgetTemporaneo.ottobre">Ottobre</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="novembre"><span data-translate="budgetApp.budgetTemporaneo.novembre">Novembre</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="dicembre"><span data-translate="budgetApp.budgetTemporaneo.dicembre">Dicembre</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="totale"><span data-translate="budgetApp.budgetTemporaneo.totale">Totale</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="mensilizzare"><span data-translate="budgetApp.budgetTemporaneo.mensilizzare">Mensilizzare</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="divisione"><span data-translate="budgetApp.budgetTemporaneo.divisione">Divisione</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="commessa.codice"><span data-translate="budgetApp.budgetTemporaneo.commessa">Commessa</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="contoContabile.nome"><span data-translate="budgetApp.budgetTemporaneo.contoContabile">Conto Contabile</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="vm.page >= vm.links['last']">
+                <tr ng-repeat="budgetTemporaneo in vm.budgetTemporaneos track by budgetTemporaneo.id">
+                    <td><a ui-sref="budget-temporaneo-detail({id:budgetTemporaneo.id})">{{budgetTemporaneo.id}}</a></td>
+                    <td>{{budgetTemporaneo.gennaio}}</td>
+                    <td>{{budgetTemporaneo.febbraio}}</td>
+                    <td>{{budgetTemporaneo.marzo}}</td>
+                    <td>{{budgetTemporaneo.aprile}}</td>
+                    <td>{{budgetTemporaneo.maggio}}</td>
+                    <td>{{budgetTemporaneo.giugno}}</td>
+                    <td>{{budgetTemporaneo.luglio}}</td>
+                    <td>{{budgetTemporaneo.agosto}}</td>
+                    <td>{{budgetTemporaneo.settembre}}</td>
+                    <td>{{budgetTemporaneo.ottobre}}</td>
+                    <td>{{budgetTemporaneo.novembre}}</td>
+                    <td>{{budgetTemporaneo.dicembre}}</td>
+                    <td>{{budgetTemporaneo.totale}}</td>
+                    <td>{{budgetTemporaneo.mensilizzare}}</td>
+                    <td>{{budgetTemporaneo.divisione}}</td>
+                    <td>
+                        <a ui-sref="commessa-detail({id:budgetTemporaneo.commessa.id})">{{budgetTemporaneo.commessa.codice}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="conto-contabile-detail({id:budgetTemporaneo.contoContabile.id})">{{budgetTemporaneo.contoContabile.nome}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="budget-temporaneo-detail({id:budgetTemporaneo.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="budget-temporaneo.edit({id:budgetTemporaneo.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="budget-temporaneo.delete({id:budgetTemporaneo.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

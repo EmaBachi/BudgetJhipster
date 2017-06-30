@@ -44,6 +44,9 @@ public class CacheConfiguration {
             cm.createCache(it.consoft.budget.domain.Divisione.class.getName(), jcacheConfiguration);
             cm.createCache(it.consoft.budget.domain.Commessa.class.getName(), jcacheConfiguration);
             cm.createCache(it.consoft.budget.domain.Conto.class.getName(), jcacheConfiguration);
+            cm.createCache(it.consoft.budget.domain.Budget.class.getName(), jcacheConfiguration);
+            cm.createCache(it.consoft.budget.domain.ContoContabile.class.getName(), jcacheConfiguration);
+            cm.createCache(it.consoft.budget.domain.BudgetTemporaneo.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

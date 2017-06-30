@@ -1,0 +1,87 @@
+
+<div>
+    <h2><span data-translate="budgetApp.budgetTemporaneo.detail.title">Budget Temporaneo</span> {{vm.budgetTemporaneo.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="budgetApp.budgetTemporaneo.gennaio">Gennaio</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.gennaio}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.febbraio">Febbraio</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.febbraio}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.marzo">Marzo</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.marzo}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.aprile">Aprile</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.aprile}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.maggio">Maggio</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.maggio}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.giugno">Giugno</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.giugno}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.luglio">Luglio</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.luglio}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.agosto">Agosto</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.agosto}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.settembre">Settembre</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.settembre}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.ottobre">Ottobre</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.ottobre}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.novembre">Novembre</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.novembre}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.dicembre">Dicembre</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.dicembre}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.totale">Totale</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.totale}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.mensilizzare">Mensilizzare</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.mensilizzare}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.divisione">Divisione</span></dt>
+        <dd>
+            <span>{{vm.budgetTemporaneo.divisione}}</span>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.commessa">Commessa</span></dt>
+        <dd>
+            <a ui-sref="commessa-detail({id:vm.budgetTemporaneo.commessa.id})">{{vm.budgetTemporaneo.commessa.codice}}</a>
+        </dd>
+        <dt><span data-translate="budgetApp.budgetTemporaneo.contoContabile">Conto Contabile</span></dt>
+        <dd>
+            <a ui-sref="conto-contabile-detail({id:vm.budgetTemporaneo.contoContabile.id})">{{vm.budgetTemporaneo.contoContabile.nome}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="budget-temporaneo-detail.edit({id:vm.budgetTemporaneo.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

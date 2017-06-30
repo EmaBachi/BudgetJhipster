@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "codice",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descrizione",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170630143029",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "conto_contabile",
+    "pagination": "no"
+}

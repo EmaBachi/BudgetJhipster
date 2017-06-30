@@ -1,0 +1,23 @@
+{
+    "budgetApp": {
+        "contoContabile" : {
+            "home": {
+                "title": "ContoContabiles",
+                "createLabel": "Genera un nuovo Conto Contabile",
+                "createOrEditLabel": "Genera o modifica un Conto Contabile"
+            },
+            "created": "&Egrave; stato generato un nuovo Conto Contabile con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Conto Contabile identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Conto Contabile con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Conto Contabile {{ id }}?"
+            },
+            "detail": {
+                "title": "Conto Contabile"
+            },
+            "codice": "Codice",
+            "nome": "Nome",
+            "descrizione": "Descrizione"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "budgetApp": {
+        "budget" : {
+            "home": {
+                "title": "Budgets",
+                "createLabel": "Genera un nuovo Budget",
+                "createOrEditLabel": "Genera o modifica un Budget"
+            },
+            "created": "&Egrave; stato generato un nuovo Budget con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Budget identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Budget con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Budget {{ id }}?"
+            },
+            "detail": {
+                "title": "Budget"
+            },
+            "gennaio": "Gennaio",
+            "febbraio": "Febbraio",
+            "marzo": "Marzo",
+            "aprile": "Aprile",
+            "maggio": "Maggio",
+            "giugno": "Giugno",
+            "luglio": "Luglio",
+            "agosto": "Agosto",
+            "settembre": "Settembre",
+            "ottobre": "Ottobre",
+            "novembre": "Novembre",
+            "dicembre": "Dicembre",
+            "totale": "Totale",
+            "mensilizzare": "Mensilizzare",
+            "divisione": "Divisione",
+            "commessa": "Commessa",
+            "conto": "Conto"
+        }
+    }
+}

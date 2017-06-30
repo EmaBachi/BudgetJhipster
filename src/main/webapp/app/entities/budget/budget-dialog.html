@@ -1,0 +1,129 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myBudgetLabel" data-translate="budgetApp.budget.home.createOrEditLabel">Create or edit a Budget</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.budget.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.budget.id" readonly />
+        </div>
+        
+        <div class="form-group">
+            <label data-translate="budgetApp.budget.commessa" for="field_commessa">Commessa</label>
+            <select class="form-control" id="field_commessa" name="commessa" ng-model="vm.budget.commessa" ng-options="commessa as commessa.codice for commessa in vm.commessas track by commessa.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="budgetApp.budget.conto" for="field_conto">Conto</label>
+            <select class="form-control" id="field_conto" name="conto" ng-model="vm.budget.conto" ng-options="conto as conto.nome for conto in vm.contos track by conto.id">
+                <option value=""></option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.gennaio" for="field_gennaio">Gennaio</label>
+            <input type="number" class="form-control" name="gennaio" id="field_gennaio"
+                    ng-model="vm.budget.gennaio"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.febbraio" for="field_febbraio">Febbraio</label>
+            <input type="number" class="form-control" name="febbraio" id="field_febbraio"
+                    ng-model="vm.budget.febbraio"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.marzo" for="field_marzo">Marzo</label>
+            <input type="number" class="form-control" name="marzo" id="field_marzo"
+                    ng-model="vm.budget.marzo"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.aprile" for="field_aprile">Aprile</label>
+            <input type="number" class="form-control" name="aprile" id="field_aprile"
+                    ng-model="vm.budget.aprile"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.maggio" for="field_maggio">Maggio</label>
+            <input type="number" class="form-control" name="maggio" id="field_maggio"
+                    ng-model="vm.budget.maggio"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.giugno" for="field_giugno">Giugno</label>
+            <input type="number" class="form-control" name="giugno" id="field_giugno"
+                    ng-model="vm.budget.giugno"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.luglio" for="field_luglio">Luglio</label>
+            <input type="number" class="form-control" name="luglio" id="field_luglio"
+                    ng-model="vm.budget.luglio"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.agosto" for="field_agosto">Agosto</label>
+            <input type="number" class="form-control" name="agosto" id="field_agosto"
+                    ng-model="vm.budget.agosto"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.settembre" for="field_settembre">Settembre</label>
+            <input type="number" class="form-control" name="settembre" id="field_settembre"
+                    ng-model="vm.budget.settembre"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.ottobre" for="field_ottobre">Ottobre</label>
+            <input type="number" class="form-control" name="ottobre" id="field_ottobre"
+                    ng-model="vm.budget.ottobre"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.novembre" for="field_novembre">Novembre</label>
+            <input type="number" class="form-control" name="novembre" id="field_novembre"
+                    ng-model="vm.budget.novembre"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.dicembre" for="field_dicembre">Dicembre</label>
+            <input type="number" class="form-control" name="dicembre" id="field_dicembre"
+                    ng-model="vm.budget.dicembre"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.totale" for="field_totale">Totale</label>
+            <input type="number" class="form-control" name="totale" id="field_totale"
+                    ng-model="vm.budget.totale"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="budgetApp.budget.mensilizzare" for="field_mensilizzare">Mensilizzare</label>
+                <input type="checkbox" name="mensilizzare" id="field_mensilizzare"
+                          ng-model="vm.budget.mensilizzare"/>
+        </div>
+        <!-- <div class="form-group">-->
+            <!-- <label class="control-label" data-translate="budgetApp.budget.divisione" for="field_divisione">Divisione</label>-->
+            <!-- <input type="number" class="form-control" name="divisione" id="field_divisione"-->
+                    <!-- ng-model="vm.budget.divisione"-->
+                   <!--  />-->
+        <!-- </div>-->
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
