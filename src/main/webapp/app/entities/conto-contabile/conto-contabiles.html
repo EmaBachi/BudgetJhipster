@@ -1,16 +1,16 @@
 <div>
-    <h2 data-translate="budgetApp.contoContabile.home.title">Conto Contabiles</h2>
+    <h2>Piano dei Conti</h2>
     <jhi-alert></jhi-alert>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-4 no-padding-left">
+           <!--  <div class="col-xs-4 no-padding-left">
                 <button class="btn btn-primary" ui-sref="conto-contabile.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span  data-translate="budgetApp.contoContabile.home.createLabel">
                         Create new Conto Contabile
                     </span>
                 </button>
-            </div>
+            </div>-->
         </div>
     </div>
     <br/>
@@ -18,7 +18,7 @@
         <table class="jh-table table table-striped">
             <thead>
                 <tr>
-                    <th><span data-translate="global.field.id">ID</span></th>
+                    <!-- <th><span data-translate="global.field.id">ID</span></th>-->
                     <th><span data-translate="budgetApp.contoContabile.codice">Codice</span></th>
                     <th><span data-translate="budgetApp.contoContabile.nome">Nome</span></th>
                     <th><span data-translate="budgetApp.contoContabile.descrizione">Descrizione</span></th>
@@ -27,7 +27,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="contoContabile in vm.contoContabiles track by contoContabile.id">
-                    <td><a ui-sref="conto-contabile-detail({id:contoContabile.id})">{{contoContabile.id}}</a></td>
+                   <!--  <td><a ui-sref="conto-contabile-detail({id:contoContabile.id})">{{contoContabile.id}}</a></td>-->
                     <td>{{contoContabile.codice}}</td>
                     <td>{{contoContabile.nome}}</td>
                     <td>{{contoContabile.descrizione}}</td>

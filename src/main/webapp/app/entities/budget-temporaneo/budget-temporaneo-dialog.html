@@ -13,6 +13,19 @@
             <input type="text" class="form-control" id="id" name="id"
                     ng-model="vm.budgetTemporaneo.id" readonly />
         </div>
+        
+        <div class="form-group">
+            <label data-translate="budgetApp.budgetTemporaneo.commessa" for="field_commessa">Commessa</label>
+            <select class="form-control" id="field_commessa" name="commessa" ng-model="vm.budgetTemporaneo.commessa" ng-options="commessa as commessa.codice for commessa in vm.commessas track by commessa.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="budgetApp.budgetTemporaneo.contoContabile" for="field_contoContabile">Conto Contabile</label>
+            <select class="form-control" id="field_contoContabile" name="contoContabile" ng-model="vm.budgetTemporaneo.contoContabile" ng-options="contoContabile as contoContabile.nome for contoContabile in vm.contocontabiles track by contoContabile.id">
+                <option value=""></option>
+            </select>
+        </div>
         <div class="form-group">
             <label class="control-label" data-translate="budgetApp.budgetTemporaneo.gennaio" for="field_gennaio">Gennaio</label>
             <input type="number" class="form-control" name="gennaio" id="field_gennaio"
@@ -96,25 +109,14 @@
                 <input type="checkbox" name="mensilizzare" id="field_mensilizzare"
                           ng-model="vm.budgetTemporaneo.mensilizzare"/>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label class="control-label" data-translate="budgetApp.budgetTemporaneo.divisione" for="field_divisione">Divisione</label>
             <input type="number" class="form-control" name="divisione" id="field_divisione"
                     ng-model="vm.budgetTemporaneo.divisione"
                     />
-        </div>
+        </div>-->
 
-        <div class="form-group">
-            <label data-translate="budgetApp.budgetTemporaneo.commessa" for="field_commessa">Commessa</label>
-            <select class="form-control" id="field_commessa" name="commessa" ng-model="vm.budgetTemporaneo.commessa" ng-options="commessa as commessa.codice for commessa in vm.commessas track by commessa.id">
-                <option value=""></option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label data-translate="budgetApp.budgetTemporaneo.contoContabile" for="field_contoContabile">Conto Contabile</label>
-            <select class="form-control" id="field_contoContabile" name="contoContabile" ng-model="vm.budgetTemporaneo.contoContabile" ng-options="contoContabile as contoContabile.nome for contoContabile in vm.contocontabiles track by contoContabile.id">
-                <option value=""></option>
-            </select>
-        </div>
+        
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
